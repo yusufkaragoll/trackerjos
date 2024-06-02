@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.6">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Finance Tracker&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Arial', sans-serif;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>header {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #4CAF50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1.5em 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 4px 6px rgba(0,0,0,0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 90%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>max-width: 1200px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>section {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 2em;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 1em 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 0.5em;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>table {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-collapse: collapse;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 1em 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #fff;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>table, th, td {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>th, td {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: left;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>th {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #4CAF50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>tbody tr:nth-child(even) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f9f9f9;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.note {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin: 1em 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1em;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fffae6;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border: 1px solid #ddd;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 5px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">        </span>footer {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>text-align: center;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>padding: 1em 0;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>background: #4CAF50;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>color: white;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Finance Tracker&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/header&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="overview"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Overview&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;p&gt;This page helps you track your incomes, expenses, rent, net income, borrowed amounts, and notes. Fill in the details below to keep track of your finances.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="income"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Income Tracker&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Date&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Income Source 1&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Income Source 2&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Total Income&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Add your income data here --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="expenses"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Expense Tracker&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Date&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Expenses&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Rent&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Total Expenses&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Add your expense data here --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="net-income"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Net Income&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Date&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Total Income&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Total Expenses&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Net Income&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Add your net income data here --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="borrowed-money"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Borrowed Money&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Borrowed Date&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Borrowed Amount&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Borrowed From&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                        </span>&lt;th&gt;Notes&lt;/th&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/tr&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/thead&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Add your borrowed money data here --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;/tbody&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/table&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;section id="notes"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2&gt;Notes&lt;/h2&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="note"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Add your additional notes here --&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/section&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;&amp;copy; 2024 Finance Tracker. All rights reserved.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
